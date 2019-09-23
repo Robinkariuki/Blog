@@ -10,4 +10,8 @@ class PostForm(FlaskForm):
     post = TextAreaField("Write your post here")
     category = SelectField("Post Category",choices=[('Tech','Tech'),('Travel','Travel'),('Fashion','Fashion'),('Food','Food'),('Life','Life'),('Culture','Culture')],validators=[Required()])
     submit = SubmitField('Submit')
-    
+
+
+class SubscriberForm(FlaskForm):
+    email = StringField("Email Address",validators=[Required(),Email()])
+    submit = SubmitField("Subscribe")
