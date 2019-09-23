@@ -42,7 +42,7 @@ There are currently no known bugs in the application
 
 ### Support and Contact Details
 
-For more information, questions or help, feel free to reach me on email me at : robinkaris7@gmail.com
+For more information, questions or help, feel free to reach me on [email](robinkaris7@gmail.com)
 
 ### Licence
 Copyright(c) 2019 Robin kariuki
