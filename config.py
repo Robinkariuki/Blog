@@ -1,10 +1,10 @@
 import os
 
 class Config:
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://robin:zelda@localhost/blog'
+    # SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://mannuh:123@localhost/blog'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     UPLOADED_PHOTOS_DEST ='app/static/photos'
-    SECRET_KEY = '12345'
+    SECRET_KEY = 'mannuh'
 
     #  email configurations
     MAIL_SERVER = 'smtp.googlemail.com'
@@ -26,11 +26,11 @@ class ProdConfig(Config):
     DEBUG =True 
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://robin:zelda@localhost/blog_test'
+    # SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://mannuh:123@localhost/blog_test'
     DEBUG =True 
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://robin:zelda@localhost/blog'
+    # SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://mannuh:123@localhost/blog'
     DEBUG = True
 
 config_options = {
