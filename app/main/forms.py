@@ -8,7 +8,7 @@ from wtforms import ValidationError
 class PostForm(FlaskForm):
     title = StringField("Post Title",validators=[Required()])
     post = TextAreaField("Write your post here")
-    category = SelectField("Post Category",choices=[('Tech','Tech'),('Travel','Travel'),('Fashion','Fashion'),('Food','Food'),('Life','Life'),('Culture','Culture')],validators=[Required()])
+    category = SelectField("Post Category",choices=[('Tech','Tech'),('Movies','Movies'),('Business','Business'),('Music','Music'),('cars','cars'),('Games','Games')],validators=[Required()])
     submit = SubmitField('Submit')
 
 
