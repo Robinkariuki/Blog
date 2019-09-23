@@ -15,3 +15,6 @@ class PostForm(FlaskForm):
 class SubscriberForm(FlaskForm):
     email = StringField("Email Address",validators=[Required(),Email()])
     submit = SubmitField("Subscribe")
+    def validate_email(self,data_field):
+        if Subscriber.query.filter_by(email =data_field.data).first():
+            raise ValidationError("Account already subscribed with that email")
